@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="task-editor">
+           
+            <textarea  name="edit" class="edit-text" cols="30" rows="10"></textarea>
+            <div class="editedBtnContainer">
+                <button class="save-edit-text editedBtn">Save</button>
+                <button class="cancel-edit-text editedBtn">Cancel</button>
+            </div>
+        </div>
+        
+        <div class="task-container">
+            <div class="task-input-container">
+                <button class="search-task-btn"></button>
+                <form id="task-form">
+                    <input type="text" id="task-input" placeholder="Enter a task">
+                    <button type="button" class="add-task-btn">Add</button>
+                </form>
+            </div>
+            <div class="task-list-container">
+            <div class="task-list">
+                <div class="task-item" data-id="1">
+                    <div class="task">
+                        <span class="task-number">1</span>
+                        <span class="task-description">wake up</span>
+                    </div>
+                    <div class="task-actions">
+                        <button type="button" class="task-options">...</button>
+                        <div class="task-options-panel">
+                            <button type="button" class="edit-task option editBtn">Edit</button>
+                            <button type="button" class="delete-task option editBtn">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More task items can be added here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
